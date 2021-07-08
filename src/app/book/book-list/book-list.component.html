@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col" *ngFor="let book of books">
+      <figure class="figure">
+        <img
+          class="img-thumbnail img-fluid"
+          src="{{ book.image }}"
+          alt="{{ book.name }}"
+        />
+        <figcaption class="figure-caption text-center">
+          {{ book.name }}
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
